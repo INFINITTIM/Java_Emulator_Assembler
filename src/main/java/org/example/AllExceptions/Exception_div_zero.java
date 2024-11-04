@@ -1,4 +1,4 @@
-package org.example;
+package org.example.AllExceptions;
 
 public class Exception_div_zero extends Exception
 {

@@ -1,4 +1,7 @@
-package org.example;
+package org.example.CommandAndProgram;
+
+import org.example.AllExceptions.Exception_div_zero;
+import org.example.MyCpu.ICpu;
 
 //исполнитель
 public class Executer {
@@ -14,11 +17,11 @@ public class Executer {
     //запуск нашей программы, то есть
     //подается набор комманд и мы с помощью нашего процессора
     // исполняем наши программы методов exec
-    public void run_program(Command[] assembler_program) {
+    public void run_program(Program prog) {
         // при каждой итерации цикла в переменную command будет
         // помещаться очередной элемент массива assembler_program
         // состоящего из комманд нашей запускаемой программы
-        for (Command command : assembler_program) {
+        for (Command command : prog) {
             try {
                 cpu.exec(command);
             } catch (Exception_div_zero e) {

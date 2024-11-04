@@ -1,6 +1,10 @@
-package org.example;
+package org.example.MyCpu;
 
-public class Cpu implements ICpu{
+import org.example.AllExceptions.Exception_div_zero;
+import org.example.AllExceptions.Exception_register;
+import org.example.CommandAndProgram.Command;
+
+public class Cpu implements ICpu {
 
     //регистры
     private int[] registers = new int[4];

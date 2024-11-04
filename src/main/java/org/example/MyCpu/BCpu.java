@@ -1,4 +1,4 @@
-package org.example;
+package org.example.MyCpu;
 
 //реализация интерфейса нашего процессора
 public class BCpu
