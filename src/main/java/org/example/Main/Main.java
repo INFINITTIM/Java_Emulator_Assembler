@@ -45,6 +45,8 @@ public class Main
         //объект исполнитя запускает программу с помощью нашего процессора cpu
         exec.run_program(prog);
 
+        System.out.println();
+
         System.out.println(prog.PopulationTasks());
         System.out.println(prog.ListWithTasksAndCounters());
         System.out.println(prog.ListDiap());
