@@ -29,7 +29,7 @@ public class Main
         prog.add(new Command(mult));
         prog.add(new Command(print));
         prog.add(new Command(mv, "a", "d"));
-       // prog.add(new Command(mv, "b", "c"));
+        prog.add(new Command(mv, "b", "c"));
         prog.add(new Command(div));
         prog.add(new Command(print));
 

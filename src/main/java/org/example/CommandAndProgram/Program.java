@@ -49,7 +49,7 @@ public class Program implements Iterable<Command>{
         List<Map.Entry<Task, Long>> list_with_tasks_and_counters = MapWithPopulationTasks()
                 .entrySet()
                 .stream()
-                .sorted(Map.Entry.<Task, Long>comparingByValue().reversed()) // Сортировка по убыванию
+                .sorted(Map.Entry.<Task, Long>comparingByValue().reversed())
                 .collect(Collectors.toList());
         return list_with_tasks_and_counters;
     }
